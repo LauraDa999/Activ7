@@ -9,7 +9,6 @@ for numero in range(1, 101):
 ```
 #Respectivo diagrama de flujo:
 ```mermaid
-graph LR
     Start --> ForLoop
     ForLoop --> |Inicializar| Numero = 1
     ForLoop --> |Condición| Numero <= 100
@@ -40,7 +39,6 @@ for numero_par in range(2, 1001, 2):
 # Respectivo diagrama de flujo:
 
 ```mermaid
-graph TD
     Start[Inicio] --> Impares
     Start --> Pares
     Impares[Imprimir Números Impares] --> ForImpares[For numero_impar in range(1, 1000, 2):]
