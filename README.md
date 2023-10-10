@@ -9,11 +9,19 @@ for numero in range(1, 101):
 ```
 #Respectivo diagrama de flujo:
 ```mermaid
-graph TD;
-    A-->B;
-    A-->C;
-    B-->D;
-    C-->D;
+graph TD
+    start((Comienzo))
+    loop[Para cada número i en el rango de 1 a 100]
+    calc{Calcular el cuadrado de i}
+    print((Imprimir "Número: i, Cuadrado: cuadrado"))
+    end((Fin))
+
+    start --> loop
+    loop --> calc
+    calc --> print
+    print --> loop
+    loop -->|Si i es 100| end
+
 ```
 
 
