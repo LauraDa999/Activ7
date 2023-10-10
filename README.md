@@ -8,6 +8,7 @@ for numero in range(1, 101):
     print(f"Número: {numero}, Cuadrado: {cuadrado}")
 ```
 #Respectivo diagrama de flujo:
+
 ```mermaid
 graph TD
     A((Inicio))
@@ -21,9 +22,7 @@ graph TD
     B -- No --> E
     C --> D
     D --> B
-
 ```
-
 
 #  Punto 2
 Imprimir un listado con los números impares desde 1 hasta 999 y seguidamente otro listado con los números pares desde 2 hasta 1000:
