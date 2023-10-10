@@ -9,18 +9,13 @@ for numero in range(1, 101):
 ```
 #Respectivo diagrama de flujo:
 ```mermaid
-    Start --> ForLoop
-    ForLoop --> |Inicializar| Numero = 1
-    ForLoop --> |Condición| Numero <= 100
-    ForLoop --> |Incrementar| Numero += 1
-    ForLoop --> Square
-    Square --> |Elevar al cuadrado| Cuadrado = Numero^2
-    Square --> Print
-    Print --> |Imprimir| "Número: " + Numero + ", Cuadrado: " + Cuadrado
-    Print --> ForLoop
-    ForLoop --> End
-    End --> Stop
+graph TD;
+    A-->B;
+    A-->C;
+    B-->D;
+    C-->D;
 ```
+
 
 #  Punto 2
 Imprimir un listado con los números impares desde 1 hasta 999 y seguidamente otro listado con los números pares desde 2 hasta 1000:
