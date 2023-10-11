@@ -84,7 +84,7 @@ else:
 ```
 
 # Punto #6
-
+Enigma Numerico
 Implementar un algoritmo que permita adivinar un número dado de 1 a 100, preguntando en cada caso si el número es mayor, menor o igual:
 ```
 import random
