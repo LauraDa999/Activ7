@@ -10,7 +10,7 @@ for numero in range(1, 101):
 #Respectivo diagrama de flujo:
 
 
-#  Punto 2
+#  Punto #2
 Imprimir un listado con los números impares desde 1 hasta 999 y seguidamente otro listado con los números pares desde 2 hasta 1000:
 
 ```
@@ -26,7 +26,7 @@ for numero_par in range(2, 1001, 2):
 ```
 # Respectivo diagrama de flujo:
 
-#  Punto 3
+#  Punto #3
 Imprimir los números pares en forma descendente hasta 2 que son menores o iguales a un número natural n ≥ 2 dado:
 ```
 n = int(input("Ingrese un número natural n ≥ 2: "))
@@ -39,3 +39,28 @@ else:
             print(i)
 ```
 
+# Punto #4
+ Desarrollar un algoritmo para informar en que año la población del país B superará a la de A:
+
+```
+# Población inicial de los países A y B
+poblacion_A = 25  # En millones
+poblacion_B = 18.9  # En millones
+
+# Tasas de crecimiento anual de los países A y B (en decimal)
+tasa_crecimiento_A = 0.02  # 2%
+tasa_crecimiento_B = 0.03  # 3%
+
+# Inicializamos un contador de años
+anio = 2022
+
+# Mientras la población de B sea menor o igual a la de A
+while poblacion_B <= poblacion_A:
+    # Calcula la población para el siguiente año
+    poblacion_A = poblacion_A * (1 + tasa_crecimiento_A)
+    poblacion_B = poblacion_B * (1 + tasa_crecimiento_B)
+    anio += 1
+
+# Imprime el año en el que la población de B supera a la de A
+print(f"En el año {anio}, la población de B ({poblacion_B:.2f} millones) superará a la población de A ({poblacion_A:.2f} millones).")
+```
