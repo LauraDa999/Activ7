@@ -64,3 +64,48 @@ while poblacion_B <= poblacion_A:
 # Imprime el año en el que la población de B supera a la de A
 print(f"En el año {anio}, la población de B ({poblacion_B:.2f} millones) superará a la población de A ({poblacion_A:.2f} millones).")
 ```
+
+# Punto #5
+Imprimir el factorial de un número natural n dado:
+
+```
+n = int(input("Ingrese un número natural n: "))
+
+if n < 0:
+    print("El factorial no está definido para números negativos.")
+elif n == 0:
+    print("El factorial de 0 es 1.")
+else:
+    factorial = 1
+    for i in range(1, n + 1):
+        factorial *= i
+    print(f"El factorial de {n} es {factorial}.")
+
+```
+
+# Punto #6
+
+Implementar un algoritmo que permita adivinar un número dado de 1 a 100, preguntando en cada caso si el número es mayor, menor o igual:
+```
+import random
+
+numero_secreto = random.randint(1, 100)
+intentos = 0
+
+print("Bienvenido a Enigma numerico.")
+
+while True:
+    intento = int(input("Adivina el número (entre 1 y 100): "))
+    intentos += 1
+
+    if intento < numero_secreto:
+        print("El número es mayor.")
+    elif intento > numero_secreto:
+        print("El número es menor.")
+    else:
+        print(f" Adivinaste el número {numero_secreto} en {intentos} intentos.")
+        break
+```
+
+# Punto #7
+
