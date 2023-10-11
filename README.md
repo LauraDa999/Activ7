@@ -9,8 +9,6 @@ for numero in range(1, 101):
 ```
 #Respectivo diagrama de flujo:
 
-```mermaid
-
 
 #  Punto 2
 Imprimir un listado con los números impares desde 1 hasta 999 y seguidamente otro listado con los números pares desde 2 hasta 1000:
@@ -28,6 +26,4 @@ for numero_par in range(2, 1001, 2):
 ```
 # Respectivo diagrama de flujo:
 
-```mermaid
-   
 #  Punto 3
