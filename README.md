@@ -10,19 +10,7 @@ for numero in range(1, 101):
 #Respectivo diagrama de flujo:
 
 ```mermaid
-graph TD
-    A((Inicio))
-    B{¿i es menor o igual a 100?}
-    C[Calcular cuadrado de i]
-    D[Imprimir "Número: i, Cuadrado: cuadrado"]
-    E((Fin))
 
-    A --> B
-    B -- Sí --> C
-    B -- No --> E
-    C --> D
-    D --> B
-```
 
 #  Punto 2
 Imprimir un listado con los números impares desde 1 hasta 999 y seguidamente otro listado con los números pares desde 2 hasta 1000:
@@ -41,20 +29,5 @@ for numero_par in range(2, 1001, 2):
 # Respectivo diagrama de flujo:
 
 ```mermaid
-    Start[Inicio] --> Impares
-    Start --> Pares
-    Impares[Imprimir Números Impares] --> ForImpares[For numero_impar in range(1, 1000, 2):]
-    ForImpares --> PrintImpar[Imprimir numero_impar]
-    PrintImpar --> ForImparesCond[¿Siguiente número impar?]
-    ForImparesCond --> ForImpares[Si]
-    ForImparesCond --> EndImpares[No]
-    EndImpares[Fin Impares] --> Stop[Detener]
-
-    Pares[Imprimir Números Pares] --> ForPares[For numero_par in range(2, 1001, 2):]
-    ForPares --> PrintPar[Imprimir numero_par]
-    PrintPar --> ForParesCond[¿Siguiente número par?]
-    ForParesCond --> ForPares[Si]
-    ForParesCond --> EndPares[No]
-    EndPares[Fin Pares] --> Stop
-```
+   
 #  Punto 3
