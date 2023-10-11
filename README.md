@@ -10,6 +10,7 @@ for numero in range(1, 101):
 #  Respectivo diagrama de flujo:
 ![mermaid-diagram-2023-10-11-223111](https://github.com/LauraDa999/Activ7/assets/141860731/c601ceb7-f5ed-4e20-bd08-ea373ce81dff)
 
+
 #  Punto #2
 Imprimir un listado con los números impares desde 1 hasta 999 y seguidamente otro listado con los números pares desde 2 hasta 1000:
 
