@@ -84,7 +84,9 @@ else:
 ```
 
 # Punto #6
+
 Enigma Numerico
+
 Implementar un algoritmo que permita adivinar un número dado de 1 a 100, preguntando en cada caso si el número es mayor, menor o igual:
 ```
 import random
@@ -108,4 +110,18 @@ while True:
 ```
 
 # Punto #7
+Implementar un programa que ingrese un número de 2 a 50 y muestre sus divisores:
+
+```
+numero = int(input("Ingresa un número entre 2 y 50: "))
+
+if 2 <= numero <= 50:
+    print(f"Los divisores de {numero} son:")
+    
+    for i in range(1, numero + 1):
+        if numero % i == 0:
+            print(i)
+else:
+    print("El número ingresado no está dentro del rango especificado.")
+```
 
