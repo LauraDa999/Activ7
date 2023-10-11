@@ -7,10 +7,8 @@ for numero in range(1, 101):
     cuadrado = numero ** 2
     print(f"Número: {numero}, Cuadrado: {cuadrado}")
 ```
-#Respectivo diagrama de flujo:
+#  Respectivo diagrama de flujo:
 
-```mermaid
-```
 
 #  Punto #2
 Imprimir un listado con los números impares desde 1 hasta 999 y seguidamente otro listado con los números pares desde 2 hasta 1000:
@@ -28,6 +26,11 @@ for numero_par in range(2, 1001, 2):
 ```
 # Respectivo diagrama de flujo:
 
+
+
+
+
+
 #  Punto #3
 Imprimir los números pares en forma descendente hasta 2 que son menores o iguales a un número natural n ≥ 2 dado:
 ```
@@ -40,6 +43,11 @@ else:
         if i % 2 == 0:
             print(i)
 ```
+#  Respectivo diagrama de flujo:
+
+
+
+
 
 # Punto #4
  Desarrollar un algoritmo para informar en que año la población del país B superará a la de A:
@@ -127,3 +135,34 @@ else:
     print("El número ingresado no está dentro del rango especificado.")
 ```
 
+#  Punto #8
+Implementar el algoritmo que muestre los números primos del 1 al 100. Nota: use funciones
+
+
+```
+
+def es_primo(numero):
+    if numero <= 1:
+        return False
+    elif numero <= 3:
+        return True
+    elif numero % 2 == 0 or numero % 3 == 0:
+        return False
+    i = 5
+    while i * i <= numero:
+        if numero % i == 0 or numero % (i + 2) == 0:
+            return False
+        i += 6
+    return True
+
+def numeros_primos_hasta_100():
+    primos = []
+    for numero in range(1, 101):
+        if es_primo(numero):
+            primos.append(numero)
+    return primos
+
+primos = numeros_primos_hasta_100()
+print("Números primos del 1 al 100:")
+print(primos)
+```
