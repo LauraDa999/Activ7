@@ -27,3 +27,15 @@ for numero_par in range(2, 1001, 2):
 # Respectivo diagrama de flujo:
 
 #  Punto 3
+Imprimir los números pares en forma descendente hasta 2 que son menores o iguales a un número natural n ≥ 2 dado:
+```
+n = int(input("Ingrese un número natural n ≥ 2: "))
+
+if n < 2:
+    print("Por favor, ingrese un número natural mayor o igual a 2.")
+else:
+    for i in range(n, 1, -2):
+        if i % 2 == 0:
+            print(i)
+```
+
