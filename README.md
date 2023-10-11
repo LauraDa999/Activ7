@@ -26,11 +26,6 @@ for numero_par in range(2, 1001, 2):
 ```
 # Respectivo diagrama de flujo:
 
-
-
-
-
-
 #  Punto #3
 Imprimir los números pares en forma descendente hasta 2 que son menores o iguales a un número natural n ≥ 2 dado:
 ```
